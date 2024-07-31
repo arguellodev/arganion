@@ -1,0 +1,70 @@
+.contenedor-padre{
+  
+  margin-top: 30px;
+  
+ 
+}
+.titulo-carrusel{
+  font-weight: 400;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 80%;
+  margin-bottom: 10px;
+  left: 0;
+  top: 0;
+  text-align: center;
+  font-size: 2rem;
+  position: absolute;
+  place-items: center;
+
+}
+.carrusel-container{
+  width: 100%;
+  position: absolute;
+  top:60%;
+  transform: translateY(-50%);
+  height: 150px;
+  
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+  
+}
+
+.item{
+  width: 100px;
+  height: 100px;
+  transition: transform 500ms ease-in-out;
+}
+
+.item img{
+  pointer-events: none;
+  width: 100%;
+}
+
+.item:hover{
+  transform: scale(1.2);
+}
+
+.carrusel-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 20%,
+    black 100%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}

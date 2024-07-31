@@ -1,0 +1,26 @@
+.my-atropos{
+    
+    pointer-events: none;
+    text-align: center;
+   width: 100%;
+    display: grid;
+  place-items: center;
+  height: auto; 
+  transition: color 0.3s ease-in-out;
+
+}
+
+.my-atropos .atropos-shadow {
+    background-color: rgba(0, 0, 0, 0.33); /* Rojo semi-transparente */
+    
+  }
+
+
+
+.my-atropos-contenido{
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    width: 90%;
+    height: 90%;
+}
