@@ -44,7 +44,7 @@ function App() {
     <>
     <Helmet>
         <title>Quetzal Virtus</title>
-        
+        <meta name="google-site-verification" content="NKJsmH4_hFosAf6_aBBifyC7-b-pTyk5Y2vUjaoi-XI" />
         <meta name="description" content="Diseño y desarrollo de páginas web profesionales con tecnologías modernas y soluciones personalizadas" />
         <meta name="keywords" content="desarrollo web, diseño web, sitio web, quetzal, quetzal virtus,desarrollo de aplicaciones web, diseño de interfaces de usuario, soluciones de marketing digital" />
         <link rel="canonical" href="https://quetzalvirtus.vercel.app" />
