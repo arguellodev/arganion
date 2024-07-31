@@ -6,7 +6,7 @@ import './App.css'
 import Navbar1 from './Componentes/navbar1/Navbar1'
 import Hero1 from './Componentes/HeroSection/Hero1'
 import Carrusel1 from './Componentes/Carrusel/carrusel1/carrusel1';
-import Efecto3d1 from './Componentes/Atropos3D/efecto3d1/efecto3d1';
+
 import PrecioCard1 from './Componentes/PrecioCards/precioCards1/precioCard1';
 import Contacto1 from './Componentes/Contacto/contacto1/contacto1';
 import Faq1 from './Componentes/FAQ/Faq1/faq1';
