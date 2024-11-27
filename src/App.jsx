@@ -11,6 +11,7 @@ import PrecioCard1 from './Componentes/PrecioCards/precioCards1/precioCard1';
 import Contacto1 from './Componentes/Contacto/contacto1/contacto1';
 import Faq1 from './Componentes/FAQ/Faq1/faq1';
 import { Helmet } from 'react-helmet';
+import History from './Componentes/Historia/history';
 function App() {
 
   function scrollear(nombre){
@@ -26,10 +27,11 @@ function App() {
   [{name: 'Inicio',icon:'./home.png', funcion: ()=>{scrollear('inicio')}}
     ,{name: 'Precios', icon: './precios.png',funcion: ()=>{scrollear('precio')} } 
   ,{name: 'Contacto',icon:'/contacto.png', funcion: ()=>{scrollear('contacto')} }
-  ,{name: 'Servicios ', funcion: null, submenu: [
-                                                  {name: 'Desarrollo Web',funcion: ()=>{console.log("Desarrollo Web")}},
-                                                  {name: 'Corte laser'},
-                                                  {name: 'Impresión'}
+  ,{name: 'Historia',icon:'/cabra.png', funcion: ()=>{scrollear('historia')} }
+  ,{name: 'Otros Servicios ', funcion: null, submenu: [
+                                                  {name: 'Animación 3D',funcion: ()=>{console.log("Desarrollo Web")}},
+                                                  {name: 'Diseño de Logo'},
+                                                  {name: 'Tarjetas de presentación'}
                                               ]}
                                              
                                               ];
@@ -43,30 +45,30 @@ function App() {
   return (
     <>
     <Helmet>
-        <title>Quetzal Virtus</title>
-        <meta name="google-site-verification" content="NKJsmH4_hFosAf6_aBBifyC7-b-pTyk5Y2vUjaoi-XI" />
+        <title>Argánion</title>
+        
         <meta name="description" content="Diseño y desarrollo de páginas web profesionales con tecnologías modernas y soluciones personalizadas" />
-        <meta name="keywords" content="desarrollo web, diseño web, sitio web, quetzal, quetzal virtus,desarrollo de aplicaciones web, diseño de interfaces de usuario, soluciones de marketing digital" />
-        <link rel="canonical" href="https://quetzalvirtus.vercel.app" />
-        <meta property="og:title" content="Quetzal Virtus - Desarrollo Web" />
+        <meta name="keywords" content="desarrollo web, diseño web, sitio web, argán, argánion,desarrollo de aplicaciones web, arganion,diseño de interfaces de usuario, soluciones de marketing digital" />
+        <link rel="canonical" href="https://arganion.vercel.app" />
+        <meta property="og:title" content="Argánion - Desarrollo Web" />
         <meta property="og:description" content="Diseño y desarrollo de páginas web profesionales" />
         <meta property="og:image" content="https://quetzalvirtus.vercel.app/furious-eyes.png" />
-        <meta property="og:url" content="https://quetzalvirtus.vercel.app" />
+        <meta property="og:url" content="https://arganion.vercel.app" />
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Product",
             "name": "Quetzal Virtus",
-            "description": "Diseño y desarrollo de páginas web profesionales",
+            "description": "Diseño y desarrollo de sitios web profesionales",
             "brand": {
               "@type": "Brand",
-              "name": "Quetzal Virtus"
+              "name": "Argánion"
             },
             "offers": {
               "@type": "AggregateOffer",
               "priceCurrency": "MXN",
-              "lowPrice": "1800",
+              "lowPrice": "1900",
               "highPrice": "12000"
             }
           })}
@@ -87,6 +89,9 @@ function App() {
     <Faq1></Faq1>
     <Element name='precio'>
       <PrecioCard1 />
+    </Element>
+    <Element name='historia'>
+    <History></History>
     </Element>
     
     <Element name='contacto'>

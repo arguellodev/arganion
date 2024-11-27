@@ -9,6 +9,8 @@
 }
 
 .cards-section .cards-titulo-container{
+    
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,9 +79,9 @@
 
 .card .card-precio{
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 3rem;
     font-weight: 700;
-    color: #08494fff;
+    color:#05445E;
 }
 
 .card .card-info{
@@ -180,8 +182,8 @@
 }
 
 .card .card-boton{
-    color: rgb(0, 0, 0);
-    background: #28d5a7ff;
+    color: rgb(255, 255, 255);
+    background: #189AB4;
     display: grid;
     place-content: center;
     width: 100%;

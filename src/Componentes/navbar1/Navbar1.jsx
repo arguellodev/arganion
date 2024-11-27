@@ -62,8 +62,9 @@ const Navbar1 = ({ MenuItems }) => {
     <nav ref={menuRef}>
       
       <div className='logo-navbar-container'>
-      <img className='logo-navbar' src='./furious-eyes.png' ></img>
-      <p>Quetzal Virtus</p>
+      <img className='logo-navbar' src='./logo.svg' ></img>
+      <img className='logo-navbar-texto' src='./logo-texto.svg'></img>
+      
       </div>
       <input
         className="menu_checkbox"

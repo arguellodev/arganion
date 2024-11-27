@@ -25,6 +25,10 @@ nav:hover{
   filter: invert(1);
 
    }
+  nav:hover .logo-navbar{
+    filter: brightness(0) invert(1);
+ 
+  }
    .logo-navbar-container{
     display: flex;
     flex-direction: row;
@@ -32,6 +36,13 @@ nav:hover{
     justify-content: center;
     align-items: center;
    }
+   .logo-navbar-texto{
+    height: 40px;
+   }
+   nav:hover .logo-navbar-texto{
+    filter: brightness(0) invert(1);
+ 
+  }
    .logo-navbar-container p{
 
     font-weight: bolder;
@@ -39,7 +50,7 @@ nav:hover{
 
    }
    .logo-navbar{
-    width: 50px;
+    width: 70px;
 
     margin-left: 20px;
    }
@@ -107,7 +118,7 @@ nav:hover{
   transition: width 0.3s ease-in-out;
   height: 4px;
   width: 0%;
-  background: rgb(3, 188, 179);
+  background: #75E6DA;
 }
    nav ul li:hover .underline{
     width: 100%;
@@ -312,5 +323,16 @@ nav:hover{
     gap: 10px;
     display: flex;
     flex-direction: column;
+  }
+
+  .logo-navbar-texto{
+    height: 30px;
+    filter: brightness(0) invert(1);
+ 
+  }
+  .logo-navbar{
+    width: 50px;
+    filter: brightness(0) invert(1);
+ 
   }
    }

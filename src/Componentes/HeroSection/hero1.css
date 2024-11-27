@@ -2,6 +2,7 @@
 .hero-section{
     width: 100%;
     place-items: center;
+    height: 90vh;
     
     padding-top: 100px;
     padding-bottom: 10px;
@@ -49,7 +50,7 @@
     color: black;
     border: none;
     border-radius: 0.5rem;
-    background: #28d5a7ff;
+    background: #75E6DA;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
     padding-left: 1.5rem;
@@ -61,7 +62,7 @@
 .hero-section .hero-info button:hover{
     
     color: white;
-    background: #08494fff;
+    background: #05445E;
     
 }
 
@@ -75,8 +76,18 @@
     justify-content: center;
     align-items: center;
     width: 80%;
+    
     position: relative;
     
+    
+}
+
+.heroimg img{
+    max-height: 85vh ;
+
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.3)); /* Sombra */
+           
     
 }
 .efecto-tridimensional{
@@ -106,6 +117,7 @@ body:hover .efecto-tridimensional{
 @media (max-width: 900px) {
    
     .hero-section{
+        height: auto;
     padding-bottom: 20px ;
     display: flex;
     flex-direction: column;
@@ -120,7 +132,7 @@ body:hover .efecto-tridimensional{
         width: 90%;
     }
     .hero-section .hero-info{
-        width: 90%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -138,7 +150,7 @@ body:hover .efecto-tridimensional{
 
 
     .hero-section .heroimg{
-        width: 80%;
+        width: 70%;
         
     }
     .efecto-tridimensional{

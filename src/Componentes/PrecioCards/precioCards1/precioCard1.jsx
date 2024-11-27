@@ -13,7 +13,7 @@ const paquetes = [
     {
         nombre: 'Landing Page',
         imagenPrincipal: './landing-page.png',
-        precio: 1800,
+        precio: 1900,
         información: 'Ideal para pequeñas empresas y freelancers que necesitan una presencia en línea básica.',
         caracteristicas: [
             { info: 'Certificado SSL',imagen:'./proteger.png' },
@@ -26,7 +26,7 @@ const paquetes = [
     {
         nombre: 'E-commerce',
         imagenPrincipal: './ecommerce.png',
-        precio: 5799,
+        precio: 3900,
         información: 'Ideal para negocios que venden diversos artículos y buscan una venta rápida de estos',
         caracteristicas: [
             { info: 'Certificado SSL', imagen: './proteger.png'  },
@@ -40,7 +40,7 @@ const paquetes = [
     {
         nombre: 'Portal de membresía',
         imagenPrincipal: './portal-membresia.png',
-        precio: 9790,
+        precio: 6790,
         información: 'Sitios web que ofrecen contenido exclusivo y acceso restringido a usuarios que se suscriben o pagan una membresía',
         caracteristicas: [
             { info: 'Certificado SSL', imagen: './proteger.png' },
@@ -76,7 +76,7 @@ const PrecioCard1 = () => {
                                 <p className='card-titulo'>{paquete.nombre}</p>
                                 <img className='card-imagen' src={paquete.imagenPrincipal} alt={paquete.nombre}></img>
                             </div>
-                            <p className='card-precio'>${selectedHosting === 'Vercel'? paquete.precio : paquete.precio + 3000 }.00</p>
+                            <p className='card-precio'>${selectedHosting === 'Vercel'? paquete.precio.toLocaleString('es-MX') : (paquete.precio + 3000).toLocaleString('es-MX') }</p>
                             <div className='card-hosting'>
                                 <p className='hosting-titulo'>Elige el tipo de hosting:</p>
                                 <div className='hosting-opciones'>
