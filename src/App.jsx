@@ -46,7 +46,7 @@ function App() {
     <>
     <Helmet>
         <title>Argánion</title>
-        
+        <meta name="google-site-verification" content="PzIE7eAECcj2QJCX013PvzhHFRfOdpQoeoz05uXZu9Y" />
         <meta name="description" content="Diseño y desarrollo de páginas web profesionales con tecnologías modernas y soluciones personalizadas" />
         <meta name="keywords" content="desarrollo web, diseño web, sitio web, argán, argánion,desarrollo de aplicaciones web, arganion,diseño de interfaces de usuario, soluciones de marketing digital" />
         <link rel="canonical" href="https://arganion.vercel.app" />
