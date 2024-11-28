@@ -4,7 +4,7 @@ import './preciocard1.css';
 function handlePaquete(telefono,mensaje){
     const phoneNumber = telefono; // Reemplaza con tu número de teléfono
      
-    var message = `¡Hola Quetzal Virtus! \n Me interese obtener una ${mensaje} para mi negocio. ¿Me podrias dar información? \n`; // Mensaje predefinido
+    var message = `¡Hola Argánion! \n Me interese obtener una ${mensaje} para mi negocio. ¿Me podrias dar información? \n`; // Mensaje predefinido
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './carrusel1.css'
 
-const items = [{imagen: './veroveracruz.svg', funcion: ()=>{window.open('https://verodeveracruz.vercel.app', '_blank');}},
+const items = [
   {imagen: './logo-cheemsmania.svg', funcion: ()=>{window.open('https://cheemsmania.vercel.app', '_blank');}},
   {imagen: './veroveracruz.svg', funcion: ()=>{window.open('https://verodeveracruz.vercel.app', '_blank');}}
 ]

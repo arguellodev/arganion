@@ -6,7 +6,7 @@ import './App.css'
 import Navbar1 from './Componentes/navbar1/Navbar1'
 import Hero1 from './Componentes/HeroSection/Hero1'
 import Carrusel1 from './Componentes/Carrusel/carrusel1/carrusel1';
-
+import Servicios from './Componentes/Servicios/servicios';
 import PrecioCard1 from './Componentes/PrecioCards/precioCards1/precioCard1';
 import Contacto1 from './Componentes/Contacto/contacto1/contacto1';
 import Faq1 from './Componentes/FAQ/Faq1/faq1';
@@ -29,9 +29,9 @@ function App() {
   ,{name: 'Contacto',icon:'/contacto.png', funcion: ()=>{scrollear('contacto')} }
   ,{name: 'Historia',icon:'/cabra.png', funcion: ()=>{scrollear('historia')} }
   ,{name: 'Otros Servicios ', funcion: null, submenu: [
-                                                  {name: 'Animación 3D',funcion: ()=>{console.log("Desarrollo Web")}},
-                                                  {name: 'Diseño de Logo'},
-                                                  {name: 'Tarjetas de presentación'}
+                                                  {name: 'Animación 3D',funcion: ()=>{scrollear('servicios')}},
+                                                  {name: 'Diseño de Logo',funcion: ()=>{scrollear('servicios')}},
+                                                  {name: 'Tarjetas de presentación',funcion: ()=>{scrollear('servicios')}}
                                               ]}
                                              
                                               ];
@@ -52,7 +52,7 @@ function App() {
         <link rel="canonical" href="https://arganion.vercel.app" />
         <meta property="og:title" content="Argánion - Desarrollo Web" />
         <meta property="og:description" content="Diseño y desarrollo de páginas web profesionales" />
-        <meta property="og:image" content="https://quetzalvirtus.vercel.app/furious-eyes.png" />
+        <meta property="og:image" content="https://arganion.vercel.app/logo.svg" />
         <meta property="og:url" content="https://arganion.vercel.app" />
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">
@@ -96,6 +96,9 @@ function App() {
     
     <Element name='contacto'>
       <Contacto1></Contacto1>
+    </Element>
+    <Element name='servicios'>
+    <Servicios></Servicios>
     </Element>
      
     </>
