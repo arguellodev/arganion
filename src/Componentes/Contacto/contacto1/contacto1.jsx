@@ -108,6 +108,7 @@ const Contacto1 = () => {
           </div>
           <p className='nombre-red-social'>+52 5573311728</p>
         </div>
+        {/*
         <div className='contacto-card instagram' onClick={handleInstagram}>
           <div className='titulo-red-social-main'>
             <p className='titulo-red-social'>Instagram</p>
@@ -115,6 +116,8 @@ const Contacto1 = () => {
           </div>
           <p className='nombre-red-social'>@QuetzalDev</p>
         </div>
+        */}
+        
       </div>
         
         <div className='formulario'>
