@@ -20,7 +20,7 @@ const Hero1 = ()=>{
         </div>
         <div className='heroimg'>
             
-            <img src='./escritorio-isometrico.svg'></img> 
+            <img src='./hero-laptop.svg'></img> 
             
        </div>
        <div className='hero-info'>

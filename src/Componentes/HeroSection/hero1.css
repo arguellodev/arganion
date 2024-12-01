@@ -47,10 +47,10 @@
     cursor: pointer;
     font-family: inherit;
     font-weight: 700;
-    color: black;
+    color: white;
     border: none;
     border-radius: 0.5rem;
-    background: #75E6DA;
+    background: #1e60baff;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
     padding-left: 1.5rem;
@@ -62,7 +62,8 @@
 .hero-section .hero-info button:hover{
     
     color: white;
-    background: #05445E;
+    background: #0d160bff;
+    filter: drop-shadow(5px 5px 10px #afbbf2ff); /* Sombra */
     
 }
 
@@ -127,7 +128,7 @@ body:hover .efecto-tridimensional{
     }
 
     .hero-section .hero-titulo{
-        text-align: center;
+        text-align: left;
         margin: 0;
         width: 90%;
     }

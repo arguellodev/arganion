@@ -118,7 +118,7 @@ nav:hover{
   transition: width 0.3s ease-in-out;
   height: 4px;
   width: 0%;
-  background: #75E6DA;
+  background: #afbbf2ff;
 }
    nav ul li:hover .underline{
     width: 100%;

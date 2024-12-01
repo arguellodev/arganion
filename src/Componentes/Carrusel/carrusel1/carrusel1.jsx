@@ -1,10 +1,20 @@
-import React, { useState, useEffect, useRef } from 'react';
-import './carrusel1.css'
+import React, { useState, useEffect, useRef } from "react";
+import "./carrusel1.css";
 
 const items = [
-  {imagen: './logo-cheemsmania.svg', funcion: ()=>{window.open('https://cheemsmania.vercel.app', '_blank');}},
-  {imagen: './veroveracruz.svg', funcion: ()=>{window.open('https://verodeveracruz.vercel.app', '_blank');}}
-]
+  {
+    imagen: "./logo-cheemsmania.svg",
+    funcion: () => {
+      window.open("https://cheemsmania.vercel.app", "_blank");
+    },
+  },
+  {
+    imagen: "./veroveracruz.svg",
+    funcion: () => {
+      window.open("https://verodeveracruz.vercel.app", "_blank");
+    },
+  },
+];
 
 const Carrusel1 = () => {
   const [position, setPosition] = useState(0);
@@ -13,14 +23,14 @@ const Carrusel1 = () => {
   const [startX, setStartX] = useState(0);
   const [startPosition, setStartPosition] = useState(0);
   const numitems = items.length;
-  const divWidth = numitems*150-50;
+  const divWidth = numitems * 150 - 50;
   const carouselRef = useRef(null);
   const intervalRef = useRef(null);
 
   useEffect(() => {
     const moveCarousel = () => {
       if (!isPaused && !isDragging) {
-        setPosition(prevPosition => {
+        setPosition((prevPosition) => {
           if (prevPosition > window.innerWidth) {
             return -divWidth;
           }
@@ -80,13 +90,13 @@ const Carrusel1 = () => {
   };
 
   return (
-    <div 
-      className='contenedor-padre' 
+    <div
+      className="contenedor-padre"
       style={{
-        width: '100%',
-        height: '200px',
-        overflow: 'hidden',
-        position: 'relative'
+        width: "100%",
+        height: "200px",
+        overflow: "hidden",
+        position: "relative",
       }}
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
@@ -95,27 +105,26 @@ const Carrusel1 = () => {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-        <div>
-           <p className='titulo-carrusel'>Algunos de nuestros clientes</p>
-        </div>
+      <div>
+        <p className="titulo-carrusel">Algunos de nuestros clientes</p>
+      </div>
       <div className="carrusel-mask">
-        <div  
+        <div
           ref={carouselRef}
-          className='carrusel-container'
+          className="carrusel-container"
           style={{
             left: `${position}px`,
             width: `${divWidth}px`,
-            cursor: isDragging ? 'grabbing' : 'grab'
+            cursor: isDragging ? "grabbing" : "grab",
           }}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          {items.map((item,index)=>(
-            <div className='item' id={index} onClick={item.funcion}>
+          {items.map((item, index) => (
+            <div className="item" id={index} onClick={item.funcion}>
               <img src={item.imagen} />
             </div>
           ))}
-          
         </div>
       </div>
     </div>

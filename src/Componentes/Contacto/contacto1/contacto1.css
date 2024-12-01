@@ -166,7 +166,7 @@ form .form-row .textarea{
 .textarea textarea:focus,.input-data input:valid,
 .textarea textarea:valid{
   
-  border-bottom: 2px solid #75E6DA;
+  border-bottom: 2px solid #1e60baff;
 }
 
 .input-data input:focus ~ label, .textarea textarea:focus ~ label,
@@ -174,7 +174,7 @@ form .form-row .textarea{
   transform: translateY(-30px);
   font-size: 1.2rem;
   font-weight: 500;
-  color:#05445E;
+  color:rgb(0, 0, 0);
  
 }
 .textarea textarea{
@@ -215,7 +215,7 @@ form .form-row .textarea{
   content: "";
   height: 2px;
   width: 100%;
-  background: #75E6DA;
+  background: #1e60baff;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.3s ease;
@@ -249,12 +249,12 @@ form .form-row .textarea{
   width: 300%;
   position: absolute;
   left: -100%;
-  background:#189AB4;
+  background:#1e60baff;
   transition: all 0.4s;
 }
 
 .submit-btn .input-data:hover .inner{
-  background:#08494fff;
+  background:rgb(2, 16, 36);
 }
 .submit-btn .input-data:hover .inner{
   left: 0;
