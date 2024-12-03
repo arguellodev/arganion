@@ -7,7 +7,7 @@ const History = () => {
       <section className="history-section">
         <div className="history-card">
           <div className="history-card-img-container">
-            <img src="goats-in-trees.svg"></img>
+            <img src="cabras-en-arboles.svg"></img>
           </div>
           <p className="borde"></p>
           <p className="texto-history">
