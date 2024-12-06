@@ -2,7 +2,10 @@ import './hero1.css'
 import { Element } from 'react-scroll';
 import { scroller } from 'react-scroll';
 import Efecto3d1 from '../Atropos3D/efecto3d1/efecto3d1'
+
 const Hero1 = ()=>{
+
+   
 
    function scrollear(nombre){
       scroller.scrollTo(nombre, {

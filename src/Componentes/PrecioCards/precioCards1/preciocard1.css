@@ -70,6 +70,8 @@
 
 .card .card-titulo-main img{
     width: 3rem;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .card .card-titulo-main p{
@@ -119,6 +121,8 @@
 .card .card-caracteristicas ul li img{
    margin-left: auto;
    height: 1.5rem;
+   user-select: none;
+    -webkit-user-drag: none;
 }
 
 
@@ -170,6 +174,8 @@
 
 .card-hosting .hosting-opciones img{
    height: 1.2rem;
+   user-select: none;
+    -webkit-user-drag: none;
  }
 
 .hosting-opciones button.hosting-seleccionado {
@@ -230,6 +236,8 @@
 }
 .hosting-features-titulo img{
     height: 1.2rem;
+    user-select: none;
+    -webkit-user-drag: none;
    
 }
 .linea-div{

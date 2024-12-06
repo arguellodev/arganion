@@ -42,6 +42,8 @@
 .faq-card img{
     pointer-events: none;
     width: 150px;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .faq-card-titulo{
