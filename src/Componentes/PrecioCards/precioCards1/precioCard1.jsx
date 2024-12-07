@@ -13,6 +13,8 @@ const paquetes = [
     {
         nombre: 'Landing Page',
         imagenPrincipal: './landing-page.png',
+        precioOferta: 1499,
+        razonOferta: 'Descuento fin de año',
         precio: 1900,
         información: 'Ideal para pequeñas empresas y freelancers que necesitan una presencia en línea básica.',
         caracteristicas: [
@@ -27,6 +29,7 @@ const paquetes = [
         nombre: 'E-commerce',
         imagenPrincipal: './ecommerce.png',
         precio: 3900,
+        precioOferta: 2999,
         información: 'Ideal para negocios que venden diversos artículos y buscan una venta rápida de estos',
         caracteristicas: [
             { info: 'Certificado SSL', imagen: './proteger.png'  },
@@ -76,7 +79,19 @@ const PrecioCard1 = () => {
                                 <p className='card-titulo'>{paquete.nombre}</p>
                                 <img className='card-imagen' src={paquete.imagenPrincipal} alt={paquete.nombre}></img>
                             </div>
-                            <p className='card-precio'>${selectedHosting === 'Vercel'? paquete.precio.toLocaleString('es-MX') : (paquete.precio + 3000).toLocaleString('es-MX') }</p>
+                            {paquete.precioOferta 
+                            && 
+                            <div className='offer-container'>
+                                <p className='texto-oferta'>Oferta</p>
+                                <p className='card-precio'>${selectedHosting === 'Vercel'? paquete.precioOferta.toLocaleString('es-MX') : (paquete.precioOferta + 3000).toLocaleString('es-MX') }</p>
+                                
+                            </div>
+                            }
+                            {paquete.precioOferta 
+                            ? <p className='card-precio-descuento'>${selectedHosting === 'Vercel'? paquete.precio.toLocaleString('es-MX') : (paquete.precio + 3000).toLocaleString('es-MX') }</p>
+                            : <p className='card-precio'>${selectedHosting === 'Vercel'? paquete.precio.toLocaleString('es-MX') : (paquete.precio + 3000).toLocaleString('es-MX') }</p>
+                            }
+                            
                             <div className='card-hosting'>
                                 <p className='hosting-titulo'>Elige el tipo de hosting:</p>
                                 <div className='hosting-opciones'>

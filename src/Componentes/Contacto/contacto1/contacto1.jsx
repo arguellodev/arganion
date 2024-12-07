@@ -4,7 +4,7 @@ import './contacto1.css';
 function handleWhatsapp(telefono){
   const phoneNumber = telefono; // Reemplaza con tu número de teléfono
    
-  var message = '¡Hola Quetzal Virtus! \n Busco información para crear mi página web :) \n'; // Mensaje predefinido
+  var message = '¡Hola Argánion! \n Busco información para crear mi página web :) \n'; // Mensaje predefinido
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   window.open(url, '_blank');
 }
