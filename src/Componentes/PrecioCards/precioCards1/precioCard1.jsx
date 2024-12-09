@@ -13,7 +13,7 @@ const paquetes = [
     {
         nombre: 'Landing Page',
         imagenPrincipal: './landing-page.png',
-        precioOferta: 1499,
+        precioOferta: 1490,
         razonOferta: 'Descuento fin de año',
         precio: 1900,
         información: 'Ideal para pequeñas empresas y freelancers que necesitan una presencia en línea básica.',
@@ -29,7 +29,7 @@ const paquetes = [
         nombre: 'E-commerce',
         imagenPrincipal: './ecommerce.png',
         precio: 3900,
-        precioOferta: 2999,
+        precioOferta: 2990,
         información: 'Ideal para negocios que venden diversos artículos y buscan una venta rápida de estos',
         caracteristicas: [
             { info: 'Certificado SSL', imagen: './proteger.png'  },
