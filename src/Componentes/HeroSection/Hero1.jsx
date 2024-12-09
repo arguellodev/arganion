@@ -19,7 +19,7 @@ const Hero1 = ()=>{
     <>
     <section className="hero-section" id='hero-section'>
         <div className='hero-titulo'>
-         <h1>Diseño y desarrollo de sitios web profesionales</h1>
+         <h1>Diseño y desarrollo de <span>sitios web profesionales</span></h1>
         </div>
         <div className='heroimg'>
             
