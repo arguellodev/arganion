@@ -45,7 +45,7 @@ function App() {
   return (
     <>
     <Helmet>
-        <title>Argánion</title>
+        <title>Argánion - Desarrollo Web Profesional</title>
         <meta name="google-site-verification" content="PzIE7eAECcj2QJCX013PvzhHFRfOdpQoeoz05uXZu9Y" />
         <meta name="description" content="Diseño y desarrollo de páginas web profesionales con tecnologías modernas y soluciones personalizadas" />
         <meta name="keywords" content="desarrollo web, diseño web, sitio web, argán, argánion,desarrollo de aplicaciones web, arganion,diseño de interfaces de usuario, soluciones de marketing digital" />
@@ -59,7 +59,7 @@ function App() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Product",
-            "name": "Quetzal Virtus",
+            "name": "Argánion",
             "description": "Diseño y desarrollo de sitios web profesionales",
             "brand": {
               "@type": "Brand",
