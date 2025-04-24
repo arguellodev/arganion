@@ -58,8 +58,10 @@ function App() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Product",
+            "@type": "LocalBussines",
             "name": "Argánion",
+            "url": "https://arganion.vercel.app",
+            "telephone":"+525573311728",
             "description": "Diseño y desarrollo de sitios web profesionales",
             "brand": {
               "@type": "Brand",
@@ -70,7 +72,8 @@ function App() {
               "priceCurrency": "MXN",
               "lowPrice": "1900",
               "highPrice": "12000"
-            }
+            },
+            "serversCuisine":"Desarrollo Web"
           })}
         </script>
       </Helmet>
